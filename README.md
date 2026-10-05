@@ -157,13 +157,13 @@ erDiagram
 **Q1.1 — Como criar uma model no Laravel?**
 
 > _Resposta:_
->
+>Uma model é criada pelo terminal com o comando php artisan make:model NomeDaModel. 
 >
 
 **Q1.2 — Como funciona uma model? Explique o papel das propriedades `$table` e `$fillable` e dos relacionamentos `hasMany` / `belongsTo`.**
 
 > _Resposta:_
->
+>A model representa uma tabela do banco. $table define qual tabela ela utiliza e $fillable informa quais campos podem receber dados.
 >
 
 ---
@@ -181,13 +181,13 @@ Confira no MySQL se as tabelas `autores` e `livros` foram criadas.
 **Q2.1 — Como criar uma migration e aplicá-la no banco de dados?**
 
 > _Resposta:_
->
+>Para criar uma migration, primeiro e preciso criar a php artisan make:migration nome_da_migration, logo depois para aplica-la, colocamos php artisan migrate
 >
 
 **Q2.2 — Como funciona uma migration? Explique os métodos `up()` e `down()`, a importância da ordem de execução e o que faz `foreignId(...)->constrained(...)`.**
 
 > _Resposta:_
->
+>O método up() cria ou altera estruturas no banco e down() desfaz essas alterações. A ordem é importante principalmente por causa das dependências entre tabelas. foreignId()->constrained() cria uma chave estrangeira que relaciona uma tabela a outra.
 >
 
 ---
